@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+
+
+    <title>Maiden Dashboard</title>
+</head>
+<body>
+  
+
+  <main class="flex items-center min-h-screen bg-green-200">
+    
+    <section class="p-10 bg-emerald-500 w-3/4 mx-auto space-y-3 shadow-lg shadow-gray-500 md:shadow-xl md:shadow-gray-500">
+
+        <H2 class="text-3xl text-center pb-3 text-white">Welcome to our Maiden Transaction Dashboard</H2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="bg-purple-500 text-lg p-2 text-white rounded-lg space-3 ">
+            <h4 class="text-2xl">Deposit</h4>
+            <h2 class="text-4xl">$<span id="deposit-total">000</span></h2>
+          </div>
+          <div class="bg-amber-500 text-lg p-5 text-white rounded-lg space-3">
+            <h4 class="text-2xl">Withdraw</h4>
+            <h2 class="text-4xl">$<span id="withdraw-total">000</span></h2>
+          </div>
+          <div class="bg-blue-700 text-lg p-5 text-white rounded-lg space-y-3">
+            <h4 class="text-2xl ">Balance</h4>
+            <h2 class="text-4xl ">$<span id="balance-total">000</span></h2>
+          </div>
+        
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div class="bg-[#67e6dc] p-4 rounded-lg space-y-3">
+            <h3 class="text-white text-2xl">Deposit Amount</h3>
+            <input id="deposit-input" min="0"  class="w-full px-3 py-1 font-semibold rounded-lg" type="number" required placeholder="  Enter $ Deposit Amount">
+            <button id="deposit-button" class="w-2/4 bg-[#1e90ff]	rounded-tl-lg hover:rounded-lg hover:text-[#ffffff] font-semibold px-2 py-1">Deposit</button>
+          </div>
+          <div class="bg-[#C4E538] p-4 rounded-lg space-y-3">
+            <h3 class="text-white text-2xl">Withdraw Amount</h3>
+            <input id="withdraw-input" min="0" class="w-full px-3 py-1 font-semibold rounded-lg" type="number" required placeholder="  Enter $ Withdraw Amount">
+            <button id="withdraw-button" class="w-2/4 bg-[#1e90ff]	rounded-tl-lg hover:rounded-lg hover:text-[#ffffff] font-semibold px-2 py-1">Withdraw</button>
+          </div> 
+        </div>
+
+
+        
+    <div class="first page pt-5 pb-20 px-4 bg-emerald-500">
+      
+      <nav class="menu">
+        <ul class="flex justify-between  ">
+          <li class="text-[#ED4C67] text-2xl relative group"><a href="#">service</a>
+          <ul class="absolute text-neutral-200 opacity-80 top-8 left-0 hidden group-hover:block w-56">
+            <li class="text-base"><a href="#">Sevings Accounts</a></li>
+            <li class="text-base"><a href="#">Money Markets Accounts</a></li>
+            <li class="text-base"><a href="#">Certificate of Deposite</a></li>
+            <li class="text-base"><a href="#">Home Equity Loans</a></li>
+            
+
+          </ul></li>
+          <li class="text-[#0652DD]  text-2xl relative group"><a href="#">explore</a>
+          <ul class="absolute text-[#6D214F] opacity-80 top-8 left-0 hidden group-hover:block w-56">
+            <li class="text-base text-[#eb2f06]"><a href="#">Use of Modern Technology</a></li>
+            <li class="text-base"><a href="#">Efficient Deposit & Credit Operations </a></li>
+            <li class="text-base"><a href="#">Financial Solvency</a></li>
+           
+          </ul></li>
+          <li class="text-[#009432] text-2xl relative  group "><a href="#">Dealings</a>
+          <ul class="absolute text-[#eb2f06] top-8 left-0   hidden group-hover:inline-block w-56">
+            <li class="text-3xl"><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+             <li class="text-3xl"><a href="#"><i class="fab fa-cc-paypal"></i></a></li>
+            <li class="text-3xl"><a href="#"><i class="fab fa-amazon-pay"></i></a></li>
+          </ul></li>
+        </ul>
+      </nav>
+    </div>
+        
+      </section>
+    
+  </main>
+  <script src="js/dashboard.js"></script>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/271e3e9a53.js" crossorigin="anonymous"></script>
+</body>
+</html>
